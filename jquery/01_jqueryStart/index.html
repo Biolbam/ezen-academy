@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>제이쿼리 연결 library</title>
+		<!-- <script src="js/jquery-3.6.0.js"></script> -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+		<style>
+			* {
+				margin: 0;
+				padding-left: 0;
+			}
+			.list {
+				display: flex;
+				justify-content: space-evenly;
+			}
+			li {
+				list-style: none;
+				width: 100px;
+				height: 100px;
+				background-color: pink;
+				font-size: 24px;
+				text-align: center;
+				line-height: 100px;
+			}
+			h1 {
+				font-size: 32px;
+				text-align: center;
+				margin-bottom: 30px;
+			}
+			a {
+				text-decoration: none;
+			}
+			li a {
+				display: block;
+				width: 100%;
+				height: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>제이쿼리 연결 = javaScript Library</h1>
+		<ul class="list">
+			<li class="li1"><a href="#">빨</a></li>
+			<li class="li2"><a href="#">주</a></li>
+			<li class="li3"><a href="#">노</a></li>
+			<li class="li4"><a href="#">초</a></li>
+			<li class="li5"><a href="#">파</a></li>
+			<li class="li6"><a href="#">남</a></li>
+			<li class="li7"><a href="#">보</a></li>
+		</ul>
+
+		<script>
+			//제이쿼리 하기 위한 준비사항으로 메모리로 로딩돼서 제이쿼리를 시작
+			$(function () {
+				$(".li1").click(function () {
+					$(".li1 a")
+						.css("background", "red")
+						.css("border", "2px solid #000")
+						.css("color", "#fff");
+				});
+				$(".li2").click(function () {
+					$(".li2 a")
+						.css("background", "orange")
+						.css("border", "2px solid #000")
+						.css("color", "#fff");
+				});
+				$(".li3").click(function () {
+					$(".li3 a")
+						.css("background", "yellow")
+						.css("border", "2px solid #000")
+						.css("color", "#fff");
+				});
+				$(".li4").click(function () {
+					$(".li4 a")
+						.css("background", "green")
+						.css("border", "2px solid #000")
+						.css("color", "#fff");
+				});
+				$(".li5").click(function () {
+					$(".li5 a")
+						.css("background", "blue")
+						.css("border", "2px solid #000")
+						.css("color", "#fff");
+				});
+				$(".li6").click(function () {
+					$(".li6 a")
+						.css("background", "navy")
+						.css("border", "2px solid #000")
+						.css("color", "#fff");
+				});
+				$(".li7").click(function () {
+					$(".li7 a")
+						.css("background", "purple")
+						.css("border", "2px solid #000")
+						.css("color", "#fff");
+				});
+				$("h1").click(function () {
+					$("h1").css("background", "tomato");
+				});
+			});
+		</script>
+	</body>
+</html>

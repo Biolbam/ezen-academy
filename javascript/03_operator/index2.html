@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>관계연산자</title>
+	</head>
+	<body>
+		<pre>
+            = 같다
+            != 같지 않다
+            === 타입까지 같다
+            < 작다
+            <= 이하
+            > 크다
+            >= 이상
+
+            ** 관계연산자의 결과값은 항상 true/false 밖에 없음.
+        </pre
+		>
+		<hr />
+
+		<script>
+			let num1 = 100,
+				num2 = 50,
+				num3;
+
+			num3 = num1 > num2;
+			document.write("결과1 = " + num3 + "<br>");
+
+			num3 = num1 == num2;
+			document.write("결과2 = " + num3 + "<br>");
+
+			num3 = num1 !== num2;
+			document.write("결과3 = " + num3 + "<br>");
+
+			num3 = num2 >= num1;
+			document.write("결과6 = " + num3 + "<br>");
+
+			let no1 = 10;
+			let no2 = "10";
+			let no3 = true;
+
+			no3 = no1 == no2;
+			document.write("결과4 = " + no3 + "<br>");
+
+			no3 = no1 === no2;
+			document.write("결과5 = " + no3 + "<br>");
+
+			// 해당 변수에 타입(데이터형태)을 알고자 할 때
+
+			console.log(typeof no1);
+			console.log(typeof no2);
+			console.log(typeof no3);
+		</script>
+	</body>
+</html>
