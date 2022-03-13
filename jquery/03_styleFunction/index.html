@@ -52,24 +52,35 @@
 
 		<script>
 			$(function () {
-				$("#btn1").click(function () {
-					$(".box1").hide();
+				// 변수 선언
+				let btn1 = $("#btn1"),
+					btn2 = $("#btn2"),
+					btn3 = $("#btn3"),
+					btn4 = $("#btn4"),
+					btn5 = $("#btn5");
+
+				let box1 = $(".box1"),
+					box2 = $(".box2"),
+					box3 = $(".box3");
+
+				btn1.click(function () {
+					box1.hide(500);
 				});
 
-				$("#btn2").click(function () {
-					$(".box1").show();
+				btn2.click(function () {
+					box1.show(500);
 				});
 
-				$("#btn3").click(function () {
-					$(".box2").slideToggle();
+				btn3.click(function () {
+					box2.slideToggle();
 				});
-				$("#btn4").click(function () {
-					$(".box3").width(400);
-					$(".box3").height(400);
+				btn4.click(function () {
+					box3.width(400);
+					box3.height(400);
 				});
-				$("#btn5").click(function () {
-					$(".box3").width(200);
-					$(".box3").height(200);
+				btn5.click(function () {
+					box3.width(200);
+					box3.height(200);
 				});
 			});
 		</script>
