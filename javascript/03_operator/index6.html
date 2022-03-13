@@ -14,5 +14,45 @@ Number() -> 문자데이터를 숫자데이터로 변화할 때 사용
 </pre
 		>
 		<hr />
+		<script>
+			// let num = prompt("첫번째 숫자를 입력해 주세요");
+			// let num2 = prompt("두번째 숫자를 입력해 주세요");
+			// // num = parseInt(num) + 10;
+			// // num = Number(num) + 10;
+			// // document.write(num);
+
+			// document.write(
+			// 	"고객님이 입력하신 첫번째 data = " + num + "입니다" + "<br>"
+			// );
+			// document.write(
+			// 	"고객님이 입력하신 두번째 data = " + num2 + "입니다" + "<br>"
+			// );
+
+			// let num3 = parseInt(num) + Number(num2);
+			// document.write("입력하신 두 수의 합은 " + num3 + "입니다" + "<br>");
+
+			//  alert("고객님이 입력한 첫번째 데이터는 = " + num + "입니다" + "\n" +
+			//  "고객님이 입력하신 두번째 데이터는 =" + num2 + "입니다" + "\n" + );
+
+			let num1 = prompt("국어 점수 입력해 주세요");
+			let num2 = prompt("수학 점수 입력해 주세요");
+			let num3 = prompt("영어 점수 입력해 주세요");
+			let num4 = prompt("전산 점수 입력해 주세요");
+			let sum =
+				parseInt(num1) + parseInt(num2) + parseInt(num3) + parseInt(num4);
+			document.write(sum);
+			let average = sum / 4;
+
+			alert(
+				"당신의 합계는 = " +
+					sum +
+					"입니다" +
+					"\n" +
+					"당신의 평균은 = " +
+					average +
+					"입니다" +
+					"\n"
+			);
+		</script>
 	</body>
 </html>
