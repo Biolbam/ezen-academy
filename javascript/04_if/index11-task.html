@@ -8,21 +8,21 @@
 	</head>
 	<body>
 		<script>
-			let num0 = prompt("국어 점수를 입력해주세요."),
-				num1 = prompt("영어 점수를 입력해주세요."),
-				num2 = prompt("수학 점수를 입력해주세요."),
-				num3 = prompt("전산 점수를 입력해주세요."),
-				num4 = Number(num0) + Number(num1) + Number(num2) + Number(num3),
-				num5 = num4 / 4,
-				num6 = "",
-				num7 = "";
+			let num0 = prompt("국어 점수를 입력해주세요.");
+			let num1 = prompt("영어 점수를 입력해주세요.");
+			let num2 = prompt("수학 점수를 입력해주세요.");
+			let num3 = prompt("전산 점수를 입력해주세요.");
+			let num4 = Number(num0) + Number(num1) + Number(num2) + Number(num3);
+			let average = num4 / 4;
+			let pyung = "";
+			let hack = "";
 
 			if (num0 >= 101 || num1 >= 101 || num2 >= 101 || num3 >= 101) {
 				alert("1부터 100까지의 숫자를 입력해주세요.");
 			} else {
-				if (num5 >= 95) {
-					num6 = "수";
-					num7 = "A+";
+				if (average >= 95) {
+					pyung = "수";
+					hack = "A+";
 					alert(
 						"국어 점수 : " +
 							num0 +
@@ -40,18 +40,18 @@
 							num4 +
 							"\n" +
 							"평균 : " +
-							num5 +
+							average +
 							"\n" +
 							"평점 : " +
-							num6 +
+							pyung +
 							"\n" +
 							"학점 : " +
-							num7 +
+							hack +
 							"\n"
 					);
-				} else if (num5 >= 90) {
-					num6 = "수";
-					num7 = "A";
+				} else if (average >= 90) {
+					pyung = "수";
+					hack = "A";
 					alert(
 						"국어 점수 : " +
 							num0 +
@@ -72,15 +72,15 @@
 							num5 +
 							"\n" +
 							"평점 : " +
-							num6 +
+							pyung +
 							"\n" +
 							"학점 : " +
-							num7 +
+							hack +
 							"\n"
 					);
 				} else if (num5 >= 85) {
-					num6 = "우";
-					num7 = "B+";
+					pyung = "우";
+					hack = "B+";
 					alert(
 						"국어 점수 : " +
 							num0 +
@@ -101,15 +101,15 @@
 							num5 +
 							"\n" +
 							"평점 : " +
-							num6 +
+							pyung +
 							"\n" +
 							"학점 : " +
-							num7 +
+							hack +
 							"\n"
 					);
 				} else if (num5 >= 80) {
-					num6 = "우";
-					num7 = "B";
+					pyung = "우";
+					hack = "B";
 					alert(
 						"국어 점수 : " +
 							num0 +
@@ -130,15 +130,15 @@
 							num5 +
 							"\n" +
 							"평점 : " +
-							num6 +
+							pyung +
 							"\n" +
 							"학점 : " +
-							num7 +
+							hack +
 							"\n"
 					);
 				} else if (num5 >= 75) {
-					num6 = "미";
-					num7 = "C+";
+					pyung = "미";
+					hack = "C+";
 					alert(
 						"국어 점수 : " +
 							num0 +
@@ -159,15 +159,15 @@
 							num5 +
 							"\n" +
 							"평점 : " +
-							num6 +
+							pyung +
 							"\n" +
 							"학점 : " +
-							num7 +
+							hack +
 							"\n"
 					);
 				} else if (num5 >= 70) {
-					num6 = "미";
-					num7 = "C";
+					pyung = "미";
+					hack = "C";
 					alert(
 						"국어 점수 : " +
 							num0 +
@@ -188,15 +188,15 @@
 							num5 +
 							"\n" +
 							"평점 : " +
-							num6 +
+							pyung +
 							"\n" +
 							"학점 : " +
-							num7 +
+							hack +
 							"\n"
 					);
 				} else if (num5 >= 65) {
-					num6 = "양";
-					num7 = "D+";
+					pyung = "양";
+					hack = "D+";
 					alert(
 						"국어 점수 : " +
 							num0 +
@@ -217,15 +217,15 @@
 							num5 +
 							"\n" +
 							"평점 : " +
-							num6 +
+							pyung +
 							"\n" +
 							"학점 : " +
-							num7 +
+							hack +
 							"\n"
 					);
 				} else if (num5 >= 60) {
-					num6 = "양";
-					num7 = "D";
+					pyung = "양";
+					hack = "D";
 					alert(
 						"국어 점수 : " +
 							num0 +
@@ -246,15 +246,15 @@
 							num5 +
 							"\n" +
 							"평점 : " +
-							num6 +
+							pyung +
 							"\n" +
 							"학점 : " +
-							num7 +
+							hack +
 							"\n"
 					);
 				} else {
-					num6 = "가";
-					num7 = "F";
+					pyung = "가";
+					hack = "F";
 					alert(
 						"국어 점수 : " +
 							num0 +
@@ -275,10 +275,10 @@
 							num5 +
 							"\n" +
 							"평점 : " +
-							num6 +
+							pyung +
 							"\n" +
 							"학점 : " +
-							num7 +
+							hack +
 							"\n"
 					);
 				}
