@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>대입연산자</title>
+	</head>
+	<body>
+		<pre>
+    1.대입연산자
+    변수 = 값 -> 해당 변수에 값을 대입하라
+    let a = 10;
+    a는 10이 기억되어 있음  
+
+    값을 누적할 때 사용하는 대입 연산자 (누적 대입연산자)
+    a = a + 10 ->  a += 10
+    a = a - 10 -> a -= 10
+    a = a * 10  -> a *= 10
+    a = a / 10  -> a /= 10
+    a = a % 10 -> a %= 10
+    </pre>
+		<hr />
+		<script>
+			let num0 = 30;
+			let num1 = 10;
+			let num2 = 20;
+			let num3 = 30;
+			let num4 = 30;
+
+			// num3 = num3 + 10;
+			num3 += 10;
+			document.write("결과1 = " + num3 + "<br>");
+
+			// num2 = num2 - 10;
+			num2 -= 10;
+			document.write("결과2 = " + num2 + "<br>");
+
+			// num1 = num1 * 20;
+			num1 *= 20;
+			document.write("결과3 = " + num1 + "<br>");
+
+			// num0 = num0 / 30;
+			num0 /= 30;
+			document.write("결과4 = " + num0 + "<br>");
+
+			// num0 = num0 % 30;
+			num4 %= 30;
+			document.write("결과5 = " + num4 + "<br>");
+		</script>
+	</body>
+</html>

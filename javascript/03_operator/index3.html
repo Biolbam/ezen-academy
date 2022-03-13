@@ -22,8 +22,20 @@
 		<script>
 			let a = true;
 			let b = !a;
+			document.write("<hr>");
 			document.write("결과1=" + a + "<br>");
 			document.write("결과2=" + b + "<br>");
+
+			b = !false;
+			document.write("결과3=" + b + "<br>");
+
+			let num1 = 10;
+			let num2 = 100;
+			let num3 = num1 <= 20 && num2 <= 100;
+			document.write("결과4=" + num3 + "<br>");
+
+			num3 = num1 <= 9 || num2 <= 100;
+			document.write("결과5=" + num3 + "<br>");
 		</script>
 	</body>
 </html>
