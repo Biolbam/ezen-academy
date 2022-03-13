@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>style 관련 함수</title>
+		<script src="js/jquery-3.6.0.js"></script>
+		<style>
+			button {
+				cursor: pointer;
+			}
+			div {
+				width: 200px;
+				height: 200px;
+				border: 1px solid #000;
+				float: left;
+				margin-right: 20px;
+			}
+			.box1 {
+				background-color: #ffcc00;
+			}
+			.box2 {
+				background-color: #47c2fb;
+			}
+			.box3 {
+				background-color: #fd6f7d;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>[jquery] 스타일 변경 함수</h2>
+		<ol>
+			<li>$('대상').css()</li>
+			<li>$('대상').show()</li>
+			<li>$('대상').hide()</li>
+			<li>$('대상').toggle()</li>
+			<li>$('대상').width()</li>
+			<li>$('대상').height()</li>
+		</ol>
+
+		<button type="button" id="btn1">Hidden</button>
+		<button type="button" id="btn2">Show</button>
+		<button type="button" id="btn3">Toggle</button>
+		<button type="button" id="btn4">Big</button>
+		<button type="button" id="btn5">Small</button>
+
+		<hr />
+		<div class="box1">Show / Hide</div>
+		<div class="box2">Toggle</div>
+		<div class="box3">Width / Height</div>
+
+		<script>
+			$(function () {
+				$("#btn1").click(function () {
+					$(".box1").hide();
+				});
+
+				$("#btn2").click(function () {
+					$(".box1").show();
+				});
+
+				$("#btn3").click(function () {
+					$(".box2").slideToggle();
+				});
+				$("#btn4").click(function () {
+					$(".box3").width(400);
+					$(".box3").height(400);
+				});
+				$("#btn5").click(function () {
+					$(".box3").width(200);
+					$(".box3").height(200);
+				});
+			});
+		</script>
+	</body>
+</html>
